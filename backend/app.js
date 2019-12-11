@@ -8,12 +8,15 @@ var app = express();
 const users = require('./routes/users.js');
 
 app.get('/', (req, res)=> {
-    return res.send("hello")
+    return res.send(
+        `<h1>Hello, Let's rate some tunes</h1>
+        <img src='https://images.pexels.com/photos/3345270/pexels-photo-3345270.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' />`
+        )
 })
 
 app.use('/users', users);
 
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log('listening on port 3k')
 })
 
