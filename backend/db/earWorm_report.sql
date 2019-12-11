@@ -35,8 +35,8 @@ CREATE TABLE comments (
     song_id INT REFERENCES songs(id) ON DELETE SET NULL
 );
 
--- INSERT INTO users(username) VALUES('trey1');
--- INSERT INTO users(username) VALUES('trey2');
+INSERT INTO users(username) VALUES('trey1');
+INSERT INTO users(username) VALUES('trey2');
 
 -- INSERT INTO genres(genre_name) VALUES('Rock');
 -- INSERT INTO genres(genre_name) VALUES('Rap');
