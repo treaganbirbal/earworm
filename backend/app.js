@@ -7,6 +7,9 @@ var app = express();
 
 const users = require('./routes/users.js');
 
+app.get('/', (req, res)=> {
+    return res.send("hello")
+})
 
 app.use('/users', users);
 
